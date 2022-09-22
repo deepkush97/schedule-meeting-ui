@@ -17,7 +17,7 @@ export const RightSection = () => {
       !email.trim() ||
       /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email) === false
     ) {
-      pushError("Please enter email");
+      pushError("Please enter a valid email");
     } else {
       pushSuccess(
         `Name: ${name},
